@@ -475,7 +475,7 @@ m
 
 설치 프로그램은 기본적으로 Prometheus에 대한 `Route`를 구성했습니다. 계속해서 Prometheus의 `Route`정보를 통해 새로운 브라우저에서 접속합니다. **Log in with OpenShift** 버튼을 클릭한 다음 `ldap` 인증 매커니즘을 선택하고 이전에 `cluster-reader` 권한을 부여한 `fancyuser1` 사용자를 사용합니다.
 
-![01_ldap](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\QY22Q4_MBO\image02\01_ldap.png)
+![01_ldap](https://github.com/justone0127/External-LDAP-Authentication-Providers-Users-and-Groups/blob/main/images/01_ldap.png)
 
 보다 구체적으로 `ose-fancy-dev` 그룹에는 `cluster-reader` 권한이 있으며, `fancyuser1`은 구성원입니다.
 
@@ -489,7 +489,7 @@ Op#nSh1ft
 
 로그인 후 처음으로 인증 프록시 권한 승인이 표시됩니다.
 
-![05_authorize_access](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\QY22Q4_MBO\image02\05_authorize_access.png)
+![05_authorize_access](https://github.com/justone0127/External-LDAP-Authentication-Providers-Users-and-Groups/blob/main/images/02_authorize_access.png)
 
 실제로 사용자와 Prometheus container 사이의 흐름에 있는 OAuth 프록시가 있습니다. 이 프록시는 AuthenticationN(AuthN)의 유효성을 검사하고 허용된 작업을 승인(AuthZ)하는 데 사용됩니다. 여기에서 Prometheus 액세스의 일부로 사용할 `fancyuser1` 계정의 권한을 *명시적으로 승인*합니다. 
 
